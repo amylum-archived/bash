@@ -4,8 +4,8 @@ ORG = amylum
 BUILD_DIR = /tmp/$(PACKAGE)-build
 RELEASE_DIR = /tmp/$(PACKAGE)-release
 RELEASE_FILE = /tmp/$(PACKAGE).tar.gz
-PATH_FLAGS = --sbindir=/usr/bin
-CONF_FLAGS = 
+PATH_FLAGS = --prefix=/usr --infodir=/tmp/trash
+CONF_FLAGS =
 CFLAGS = -static -static-libgcc -Wl,-static -lc
 
 PACKAGE_VERSION = $$(git --git-dir=upstream/.git log HEAD...HEAD~ | tail -1 | sed 's/Bash-\([0-9.]*\) patch \([0-9]*\)/\1p\2/')
