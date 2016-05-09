@@ -6,7 +6,7 @@ RELEASE_DIR = /tmp/$(PACKAGE)-release
 RELEASE_FILE = /tmp/$(PACKAGE).tar.gz
 PATH_FLAGS = --prefix=/usr --infodir=/tmp/trash
 CONF_FLAGS = --without-bash-malloc
-CFLAGS = -static -static-libgcc -Wl,-static -lc
+CFLAGS =
 
 PACKAGE_VERSION = $$(git --git-dir=upstream/.git log HEAD...HEAD~ | tail -1 | sed 's/.*Bash-\([0-9.]*\) patch \([0-9]*\)/\1p\2/')
 PATCH_VERSION = $$(cat version)
