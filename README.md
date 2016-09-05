@@ -1,6 +1,8 @@
 bash
 ==========
 
+[![Build Status](https://img.shields.io/circleci/project/amylum/bash.svg)](https://circleci.com/gh/amylum/bash)
+[![GitHub release](https://img.shields.io/github/release/amylum/bash.svg)](https://github.com/amylum/bash/releases)
 [![GPL Licensed](http://img.shields.io/badge/license-GPL3-green.svg)](https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3))
 
 Package repo for [bash](http://www.gnu.org/software/bash/bash.html)

@@ -1,0 +1,21 @@
+name 'bash'
+org 'amylum'
+
+license 'COPYING'
+
+configure_flags(
+  prefix: '/usr',
+  'without-bash-malloc': nil
+)
+
+harden
+
+build do
+  configure
+  make
+  install
+end
+
+test do
+  run 'bash --version'
+end
