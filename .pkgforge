@@ -10,8 +10,6 @@ configure_flags(
 
 harden
 
-patch '0001-help-fix-printf-format-security-warning.patch'
-
 build do
   configure
   make
